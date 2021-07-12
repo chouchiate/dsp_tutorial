@@ -7,29 +7,7 @@
 			"command": "/usr/bin/gcc",
 			"args": [
 				"-g",
-				"${workspaceFolder}/source/signal_variance/*.c",
-				"-o",
-				"${fileDirname}/${fileBasenameNoExtension}"
-			],
-			"options": {
-				"cwd": "${fileDirname}"
-			},
-			"problemMatcher": [
-				"$gcc"
-			],
-			"group": {
-				"kind": "build",
-				"isDefault": true
-			},
-			"detail": "compiler: /usr/bin/gcc"
-		},
-		{
-			"type": "cppbuild",
-			"label": "C/C++: gcc build active file",
-			"command": "/usr/bin/gcc",
-			"args": [
-				"-g",
-				"${workspaceFolder}/source/signal_variance/*.c",
+				"${workspaceFolder}/source/signal_std_deviation/*.c",
 				"-o",
 				"${fileDirname}/${fileBasenameNoExtension}"
 			],

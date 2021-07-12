@@ -8,16 +8,21 @@
 extern double InputSignal_f32_1kHz_15kHz[SIG_LENGTH];
 double calc_signal_mean (double *sig_src_arr, int sig_len);
 double calc_signal_variance (double *sig_src_arr, double sig_mean, int sig_len);
+double calc_signal_std_deviation (double sig_variance);
 double MEAN;
 double VARIANCE;
+double STD;
 
 int main () {
   double * dPtr = &InputSignal_f32_1kHz_15kHz[0];
-  MEAN = calc_signal_mean(dPtr, SIG_LENGTH);
+  MEAN = calc_signal_mean (dPtr, SIG_LENGTH);
   printf("\nMean = %f",MEAN);
 
-  VARIANCE = calc_signal_variance(dPtr, MEAN, SIG_LENGTH);
+  VARIANCE = calc_signal_variance (dPtr, MEAN, SIG_LENGTH);
   printf("\nVariance = %f", VARIANCE);
+
+  STD = calc_signal_std_deviation (VARIANCE);
+  printf("\nStandard Deviation: %f", STD);
   
   return 0;
 }
@@ -41,4 +46,10 @@ double calc_signal_variance (double *sig_src_arr, double sig_mean, int sig_len) 
 
   _variance = _variance / (sig_len - 1);
   return _variance;
+}
+
+double calc_signal_std_deviation (double sig_variance) {
+  double _std = sqrt(sig_variance);
+
+  return _std;
 }
