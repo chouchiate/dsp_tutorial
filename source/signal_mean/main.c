@@ -18,7 +18,6 @@ int main () {
 double calc_signal_mean (double *sig_src_arr, int sig_len) {
   double _mean = 0.0;
   for (int i = 0; i < sig_len; i++) {
-    printf("%i==>: %f\n", i, sig_src_arr[i]);
     _mean = _mean + sig_src_arr[i];
   }
 

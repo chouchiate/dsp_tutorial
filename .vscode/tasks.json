@@ -7,7 +7,7 @@
 			"command": "/usr/bin/gcc",
 			"args": [
 				"-g",
-				"${workspaceFolder}/signal_mean/*.c",
+				"${workspaceFolder}/source/signal_variance/*.c",
 				"-o",
 				"${fileDirname}/${fileBasenameNoExtension}"
 			],
@@ -29,7 +29,7 @@
 			"command": "/usr/bin/gcc",
 			"args": [
 				"-g",
-				"${workspaceFolder}/signal_variance/*.c",
+				"${workspaceFolder}/source/signal_variance/*.c",
 				"-o",
 				"${fileDirname}/${fileBasenameNoExtension}"
 			],
