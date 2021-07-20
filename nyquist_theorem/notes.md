@@ -1,3 +1,7 @@
+## Extra Reading Material
+
+**ADI Analog Filter - Training Material - [ADI](https://www.analog.com/media/en/training-seminars/design-handbooks/Basic-Linear-Design/Chapter8.pdf)**
+
 ## Nyquist Theorem
 
 ```math
